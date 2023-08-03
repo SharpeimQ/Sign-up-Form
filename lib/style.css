@@ -1,14 +1,76 @@
-:root {
-  --base-font-size: 16px;
-  font-size: var(--base-font-size);
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('../lib/Norse-Bold.otf');
 }
 
+:root {
+  --base-font-size: 16px;
+  --default-font: 'Norse-Bold';
+  --create-acc-button-color: #596D48;
+  --form-input-color: #e5e7eb;
+  font-size: var(--base-font-size);
+  font-family: var(--default-font);
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 ul, ol {
   list-style: none;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Left Portion of Sign-up Form */
+.left-side {
+  position: relative;
+  flex: 3;
+}
+
+.background-image, .leaf-image {
+  width: 100%;
+  min-height: 100%;
+}
+
+.leaf-overlay {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  height: 15%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 100%;
+  width: 15%;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+/* Right Portion of Sign up Form */
+.right-side {
+  flex: 7;
 }
