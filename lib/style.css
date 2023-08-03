@@ -72,6 +72,49 @@ a:hover {
 
 /* Right Portion of Sign up Form */
 .right-side {
+  display: flex;
+  flex-direction: column;
   flex: 7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  background: var(--form-input-color);
+  min-height: 100vh;
 }
 
+.description {
+  display: flex;
+  flex-flow: column;
+  height: 35%;
+  gap: 25px;
+  padding-left: 40px;
+  padding-bottom: 70px;
+  justify-content: end;
+  align-items: start;
+}
+
+.form-container {
+  height: 30%;
+  padding-left: 40px;
+  background-color: white;
+}
+
+.submit-container {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  height: 35%;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.button {
+  background: none;
+  border: none;
+  padding: 50px;
+  margin: 0;
+  font: inherit;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
