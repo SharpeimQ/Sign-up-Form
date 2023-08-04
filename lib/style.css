@@ -7,7 +7,7 @@
   --base-font-size: 16px;
   --default-font: 'Norse-Bold';
   --create-acc-button-color: #596D48;
-  --form-input-color: #e5e7eb;
+  --form-input-color: #f8f8f8;
   font-size: var(--base-font-size);
   font-family: var(--default-font);
 }
@@ -70,6 +70,17 @@ a:hover {
   font-weight: 900;
 }
 
+.footer {
+  display: fixed;
+  position: absolute;
+  font-size: 2rem;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
 /* Right Portion of Sign up Form */
 .right-side {
   display: flex;
@@ -85,6 +96,9 @@ a:hover {
 .description {
   display: flex;
   flex-flow: column;
+  max-width: 900px;
+  font-size: 1.35rem;
+  font-weight: 700;
   height: 35%;
   gap: 25px;
   padding-left: 40px;
@@ -96,7 +110,8 @@ a:hover {
 .form-container {
   height: 30%;
   padding-left: 40px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.883); 
+  box-shadow: 0 9px 6px rgba(0, 0, 0, 0.15)
 }
 
 .submit-container {
@@ -111,10 +126,37 @@ a:hover {
 .button {
   background: none;
   border: none;
-  padding: 50px;
+  border-radius: 10px;
+  padding: 15px 55px 15px 55px;
   margin: 0;
   font: inherit;
-  background-color: green;
+  font-size: 1.2rem;
+  font-weight: 900;
+  background-color: var(--create-acc-button-color);
   color: white;
   cursor: pointer;
+  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #445336;
+}
+
+a:hover {
+  color: #596D48;
+}
+
+.login, .login-text {
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.login-text {
+  color: black;
+}
+
+.login {
+  color: green;
+  transition: background-color 0.3s ease;
 }
