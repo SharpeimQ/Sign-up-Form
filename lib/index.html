@@ -32,13 +32,43 @@
         </p>      
       </div>
       <div class="form-container">
-        <form action="">
+        <h5>Let's do This!</h5>
+        <form class="form" action="#" method="get" autocomplete="on">
 
+          <div class="input-container">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName">
+          </div>
+
+          <div class="input-container">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName">
+          </div>
+
+          <div class="input-container">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="input-container">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="tel" id="phoneNumber">
+          </div>
+
+          <div class="input-container">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password">
+          </div>
+
+          <div class="input-container">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPassword">
+          </div>
         </form>
       </div>
       <div class="submit-container">
         <div class="button-container">
-          <button class="button">Create Account</button>
+          <button class="button" id="submitBtn" type="button">Create Account</button>
         </div>
         <div class="login">
           <p class="login-text">Already have an account?  <a class="login" href="">Log in</a></p>

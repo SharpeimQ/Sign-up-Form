@@ -21,6 +21,7 @@
 .container {
   display: flex;
   min-height: 100vh;
+  overflow-y: auto;
 }
 
 ul, ol {
@@ -71,11 +72,10 @@ a:hover {
 }
 
 .footer {
-  display: fixed;
   position: absolute;
   font-size: 2rem;
   bottom: 0;
-  height: 5%;
+  height: 30px;
   width: 100%;
   text-align: center;
   color: white;
@@ -96,9 +96,9 @@ a:hover {
 .description {
   display: flex;
   flex-flow: column;
-  max-width: 900px;
+  max-width: 750px;
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 400;
   height: 35%;
   gap: 25px;
   padding-left: 40px;
@@ -135,7 +135,7 @@ a:hover {
   background-color: var(--create-acc-button-color);
   color: white;
   cursor: pointer;
-  box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
 }
 
@@ -144,19 +144,59 @@ button:hover {
 }
 
 a:hover {
-  color: #596D48;
-}
-
-.login, .login-text {
-  font-size: 1rem;
-  font-weight: 650;
+  color: #445336;
 }
 
 .login-text {
   color: black;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 .login {
   color: green;
+  font-weight: 630;
+  font-size: 0.95rem;
   transition: background-color 0.3s ease;
+}
+
+/* Form Styling */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px 10px 40px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  min-width: 750px;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 0.65rem;
+  color: rgb(71, 71, 71);
+}
+
+input {
+  border: 2px solid rgba(144, 144, 144, 0.2);
+  border-radius: 5px;
+  padding: 4px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input:focus {
+  border: 2px solid rgba(13, 13, 93, 0.53);
+  outline: none;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.05);
 }
