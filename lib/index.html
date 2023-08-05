@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Sign up Form</title>
   <link rel="stylesheet" href="../lib/style.css">
+  <script src="../lib/script.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -33,42 +34,42 @@
       </div>
       <div class="form-container">
         <h5>Let's do This!</h5>
-        <form class="form" action="#" method="get" autocomplete="on">
+        <form class="form" action="../lib/test.html" method="get" autocomplete="on">
 
           <div class="input-container">
               <label for="firstName">FIRST NAME</label>
-              <input type="text" id="firstName">
+              <input type="text" id="firstName" required>
           </div>
 
           <div class="input-container">
             <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName">
+            <input type="text" id="lastName" required>
           </div>
 
           <div class="input-container">
             <label for="email">EMAIL</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
           </div>
 
           <div class="input-container">
             <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="tel" id="phoneNumber">
+            <input type="tel" id="phoneNumber" required>
           </div>
 
           <div class="input-container">
             <label for="password">PASSWORD</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
           </div>
 
           <div class="input-container">
             <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="password" id="confirmPassword">
+            <input type="password" id="confirmPassword" required>
           </div>
         </form>
       </div>
       <div class="submit-container">
         <div class="button-container">
-          <button class="button" id="submitBtn" type="button">Create Account</button>
+          <button class="button" id="submitBtn" type="submit">Create Account</button>
         </div>
         <div class="login">
           <p class="login-text">Already have an account?  <a class="login" href="">Log in</a></p>
